@@ -12,14 +12,30 @@
      color: orange;
  }
 
-    button {
-        size: 100px;
+    
+
+      h2{
+          color: purple;
+          font-size: 30px;
+          font-family: serif;
+      }
+
+      button {
+        size: 50px;
         background-color: white;
         color: black;
         border: 2px solid #da8637; 
-        font-size: 50px;
+        font-size: 30px;
         font-style: oblique;
       }
+
+      h3{
+          color: white;
+          font-size: 40px;
+          font-family: sans-serif;
+      }
+
+
 
 
  
