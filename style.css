@@ -34,9 +34,13 @@
           font-size: 1.8em;
           font-family: serif;
           overflow: hidden;
-          border-right: .25em;
+          border-right: .07em solid purple; 
+          white-space: nowrap; 
+          margin: 0 auto; 
+          letter-spacing: .15em;
           letter-spacing: .5em;  
-          animation: typing 5s steps(14);
+          animation: typing 5s steps(14),
+                     blinking 1s steps(14);
                      
          
 
@@ -115,7 +119,7 @@
     0% {
         transform: translateX(-200px);}
     100% {
-        transform: translateX(1200px);
+        transform: translateX(1400px);
     }
 }
 
@@ -171,7 +175,7 @@ h3 {
 
 /*------Small Screens-----*/
 @media screen and (max-width: 700px) {
-body {
+.main  {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
