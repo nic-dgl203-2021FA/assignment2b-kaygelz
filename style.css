@@ -21,7 +21,7 @@
  }
 
     h1{
-     color: rgb(49, 189, 245);
+     color: orange;
      text-align: center;
      font-family: sans-serif;
     
@@ -106,7 +106,7 @@
 
 .trick {
     grid-column: 2;
-    color: white;
+    color: orange;
     font-size: 2em;
     font-family: serif;
     animation: scalein 2s 1s backwards;
@@ -171,6 +171,16 @@
 
 }
 
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /*Animations*/
 
 h3 {
@@ -213,6 +223,9 @@ h3 {
 
 }
 
+.bonus2 {
+    animation: spin 4s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
 
 
 
