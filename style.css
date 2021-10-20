@@ -23,12 +23,20 @@
           color: purple;
           font-size: 30px;
           font-family: serif;
-          text-align: center;
+          overflow: hidden;
+          text-align: left;
+          border-right: .05em purple;
+          animation-name: typing;
+          animation-duration: 5s;
+          animation-timing-function: steps(15);
+
+         
+         
       }
 
       .main button {
-        width: 80%;
-        height: 50%;
+        width: 50%;
+        height: 30%;
         background-color: white;
         color: black;
         border: 2px solid #da8637; 
@@ -49,6 +57,30 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+h2{
+    animation: typing 5s steps(15),
+                blinking .75s steps(1) infinite
+}
+
+@keyframes blinking {
+    0%, 100%{
+        border-color: transparent;
+    }
+    50% {
+        border-color: purple;
+    }
+}
+
+
+@keyframes typing {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
 }
 
 
