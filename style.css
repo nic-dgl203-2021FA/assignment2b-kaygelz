@@ -23,21 +23,26 @@
           color: purple;
           font-size: 30px;
           font-family: serif;
+          text-align: center;
       }
 
-      .button {
-        
+      .main button {
+        width: 80%;
+        height: 50%;
         background-color: white;
         color: black;
         border: 2px solid #da8637; 
         font-size: 30px;
         font-style: oblique;
+        align-self: center;
+        justify-items: center;
       }
 
       h3{
           color: white;
           font-size: 40px;
           font-family: sans-serif;
+          text-align: center;
       }
 
 .main{
