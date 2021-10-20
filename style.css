@@ -20,15 +20,15 @@
     
 
       h2{
-          color: purple;
+          color: orange;
           font-size: 30px;
           font-family: serif;
           overflow: hidden;
           text-align: left;
-          border-right: .05em purple;
-          animation-name: typing;
-          animation-duration: 5s;
-          animation-timing-function: steps(15);
+          border-right: 2px orange;
+          animation: typing 5s steps(15),
+                blinking .75s steps(1) infinite
+         
 
          
          
@@ -40,10 +40,11 @@
         background-color: white;
         color: black;
         border: 2px solid #da8637; 
-        font-size: 30px;
+        font-size: 20px;
         font-style: oblique;
         align-self: center;
         justify-items: center;
+        transition-duration: .5s;
       }
 
       h3{
@@ -59,10 +60,7 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-h2{
-    animation: typing 5s steps(15),
-                blinking .75s steps(1) infinite
-}
+
 
 @keyframes blinking {
     0%, 100%{
@@ -83,7 +81,17 @@ h2{
     }
 }
 
+@keyframes wiggle {
 
+}
+
+.main button:hover{
+    transform: scale(1.5);
+    background-color: orange;
+    border-color: white;
+
+
+}
  
 
 
