@@ -75,13 +75,46 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 30px;
 }
 
 .clouds {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+    padding-top: 30px;
 }
+
+
+
+/*----row 3---*/
+.bonus {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 30px;
+    padding-left: 30px;
+    align-content: center;
+   
+}
+
+.bonus1 {
+    grid-column: 1;
+    
+
+}
+
+.trick {
+    grid-column: 2;
+    color: white;
+    font-size: 2em;
+    font-family: serif;
+}
+
+.bonus2 {
+    grid-column: 3;
+}
+
 
 
 /*------keyframes-----------*/
