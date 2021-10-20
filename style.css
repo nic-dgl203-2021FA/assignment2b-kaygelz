@@ -1,7 +1,17 @@
-/*Author: Kaylee Gelz */
+/*Author: Kaylee Gelz 
+
+1.Global Styles
+2.Keyframes
+3.Animations
+4.Small Screen
+
+*/
 
 
-/*Global Styles*/
+
+
+
+/*-----Global Styles-------*/
     body{
      background-color: black;
      display: grid;
@@ -11,7 +21,7 @@
  }
 
     h1{
-     color: orange;
+     color: rgb(49, 189, 245);
      text-align: center;
      font-family: sans-serif;
     
@@ -21,13 +31,13 @@
 
       h2{
           color: orange;
-          font-size: 30px;
+          font-size: 1.8em;
           font-family: serif;
           overflow: hidden;
-          text-align: left;
-          border-right: 2px orange;
-          animation: typing 5s steps(15),
-                blinking .75s steps(1) infinite
+          border-right: .25em;
+          letter-spacing: .5em;  
+          animation: typing 5s steps(14);
+                     
          
 
          
@@ -42,6 +52,7 @@
         border: 2px solid #da8637; 
         font-size: 20px;
         font-style: oblique;
+        margin-left: 30%;
         align-self: center;
         justify-items: center;
         
@@ -62,8 +73,14 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.clouds {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
 
 
+/*------keyframes-----------*/
 @keyframes blinking {
     0%, 100%{
         border-color: transparent;
@@ -89,13 +106,25 @@
 
 }
 
-@keyframe flipdown {
+@keyframes flipdown {
     from {transform: rotateX(0deg);}
-    to {transform: rotateX(90deg);}
+    to {transform: rotateX(-90deg);}
 }
+
+@keyframes float {
+    0% {
+        transform: translateX(-200px);}
+    100% {
+        transform: translateX(1200px);
+    }
+}
+
+
+/*Animations*/
 
 h3 {
     animation: flipup 2s cubic-bezier(.25,.44,.26,.73) both;
+    animation-delay: 1.5s;
      
 }
 
@@ -116,7 +145,13 @@ h3 {
 
 }
 
+.cloud1 {
+    animation: float 30s linear infinite;
+}
 
+.cloud2 {
+    animation: float 40s 3s linear infinite backwards;
+}
  
 
 
@@ -129,21 +164,18 @@ h3 {
 
 
 
-/*.grid-container {
+
+
+
+
+
+/*------Small Screens-----*/
+@media screen and (max-width: 700px) {
+body {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
-    }
-
-
-
-
-
-@media screen and (min-width: 700px) {
-.grid-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: auto;
+   
 
 }
 }
