@@ -187,6 +187,15 @@
     }
 }
 
+@keyframes fade {
+    0%{
+        opacity:0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /*Animations*/
 
 h3 {
@@ -232,9 +241,14 @@ h3 {
 .bonus2 {
     animation: spin 4s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 }
+ 
+#ghost1 {
+    animation: fade 11s 2s ease-out both;
+}
 
-
-
+#ghost2 {
+    animation: fade 10s 3s ease-out both;
+}
 
 
 
