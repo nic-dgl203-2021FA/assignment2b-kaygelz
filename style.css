@@ -19,6 +19,24 @@
 
   
  }
+/* Nav Code modified from Linkd in-Jen Kramer*/
+ nav ul{
+     margin: 0;
+     padding:0;
+     list-style-type: none;
+     display: flex;
+     justify-content: flex-end;
+     font-size: 1.5rem;
+     color: orange;
+ }
+  nav a{
+    padding: 0.5rem 1rem;
+    display: block;
+    color: orange;
+    text-decoration: none;
+    
+
+  }
 
     h1{
      color: orange;
