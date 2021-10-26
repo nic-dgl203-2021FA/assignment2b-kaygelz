@@ -48,10 +48,16 @@
          
       }
 
-      p{
+      #HH {
           color: orange;
           font-size: 2.5em;
           font-family: fantasy;
+          text-align: center;
+          animation: movein 5s linear both;
+          --dist: 100%;
+          --deg: 20deg;
+          --scale: 2;
+
       }
 
       .main button {
@@ -125,6 +131,15 @@
 
 
 /*------keyframes-----------*/
+
+:root {
+    --dist: 0%;
+    --scale: 1;
+    --deg: 10%;
+}
+
+}
+
 @keyframes blinking {
     0%, 100%{
         border-color: transparent;
@@ -195,6 +210,25 @@
         opacity: 1;
     }
 }
+@keyframes movein {
+    0% {
+        transform: translateX(-150%) scale(1) rotate(0deg);
+    }
+    100% {
+        transform: translateX((var(--dist)) scale(var(--scale)) rotate(var(--deg));
+    }
+}
+
+}
+
+@keyframes swoop {
+    0% {
+        offset-distance: 5%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+}
 
 /*Animations*/
 
@@ -244,12 +278,16 @@ h3 {
  
 #ghost1 {
     animation: fade 11s 2s ease-out both;
+  
 }
 
 #ghost2 {
     animation: fade 10s 3s ease-out both;
+    
 }
 
+
+}
 
 
 
