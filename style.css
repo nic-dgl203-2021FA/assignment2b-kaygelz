@@ -21,6 +21,7 @@
   
  }
 /* Nav Code modified from Linkd in-Jen Kramer*/
+
 nav{
     background-color: darkgray;
 }
@@ -49,7 +50,7 @@ nav ul{
    
 
  }
-
+*/
     h1{
      color: orange;
      text-align: center;
@@ -90,7 +91,7 @@ nav ul{
 
       }
 
-      .main button {
+      .mainmotion button {
         width: 50%;
         height: 30%;
         background-color: white;
@@ -113,7 +114,7 @@ nav ul{
        
     }
 
-.main{
+.mainmotion{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -130,6 +131,7 @@ nav ul{
 
 
 /*----row 3---*/
+
 .bonus {
     display: grid;
     grid-template-rows: 1fr;
@@ -269,7 +271,7 @@ h3 {
 }
 
 
-.main button:hover{
+.mainmotion button:hover{
     transform: scale(1.5);
     background-color: orange;
     border-color: white;
@@ -277,7 +279,7 @@ h3 {
 
 }
 
-.main button{
+.mainmotion button{
     transition: background .5s ease-out,
                 transform .75s ease-in,
                 color .5s ease-in-out;
@@ -329,16 +331,9 @@ h3 {
 
 
 
-/*------Small Screens-----*/
-@media screen and (max-width: 600px) {
-.main  {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-   
 
-}
-}
+
+
 
 
 
