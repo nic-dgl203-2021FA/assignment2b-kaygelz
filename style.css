@@ -1,3 +1,4 @@
+
 /*Author: Kaylee Gelz 
 
 1.Global Styles
@@ -20,23 +21,34 @@
   
  }
 /* Nav Code modified from Linkd in-Jen Kramer*/
- nav ul{
-     margin: 0;
-     padding:0;
-     list-style-type: none;
-     display: flex;
-     justify-content: flex-end;
-     font-size: 1.5rem;
-     color: orange;
- }
-  nav a{
-    padding: 0.5rem 1rem;
+nav{
+    background-color: darkgray;
+}
+nav li{
     display: block;
-    color: orange;
-    text-decoration: none;
-    
+    float: left;
+    list-style-type: none;
 
-  }
+}
+nav ul{
+    margin: 0;
+    padding:0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    color: black;
+}
+ nav a{
+   padding: 0.5rem 1rem;
+   display: block;
+   float: right;
+   color: white;
+   text-decoration: none;
+   
+   
+
+ }
 
     h1{
      color: orange;
@@ -156,7 +168,7 @@
     --deg: 10%;
 }
 
-}
+
 
 @keyframes blinking {
     0%, 100%{
@@ -237,7 +249,7 @@
     }
 }
 
-}
+
 
 @keyframes swoop {
     0% {
@@ -296,7 +308,7 @@ h3 {
  
 #ghost1 {
     animation: fade 11s 2s ease-out both;
-  
+   
 }
 
 #ghost2 {
@@ -305,7 +317,7 @@ h3 {
 }
 
 
-}
+
 
 
 
