@@ -322,7 +322,8 @@ h3 {
  
 #ghost1 {
     animation: fade 11s 2s ease-out both;
-   
+    offset-path: path("M1480.3,36.39s-196,104-330.66,111.14S943.3,87.39,819.8,29s-212.5-16.6-335.27,32.4-183.23,70-281.23,84-151-44-203-84");
+   animation: swoop 5s linear both;
 }
 
 #ghost2 {
